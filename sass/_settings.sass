@@ -1,0 +1,196 @@
+*
+  box-sizing: border-box
+
+select
+  -moz-appearance: none
+  -webkit-appearance: none
+
+select::-ms-value
+  background: none
+
+select::-ms-expand
+  display: none
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+/* Firefox */
+input[type=number]
+  -moz-appearance: textfield
+
+a
+  text-decoration: none
+  color: inherit
+  font-family: inherit
+  border: none
+  outline: none
+  -webkit-tap-highlight-color: transparent
+  &:active
+    outline: none
+    border: none
+
+button
+  font-family: inherit
+  color: inherit
+  outline: none
+  border: none
+  background: none
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+
+input
+  font-family: inherit
+  color: inherit
+  background: none
+  border: none
+  outline: none
+  -webkit-appearance: none
+  &::placeholder
+    opacity: 1
+  &::placeholder
+    color: inherit
+    opacity: 1
+  &:invalid
+    box-shadow: none
+
+img
+  width: 100%
+  user-select: none
+  -moz-user-select: none
+  -ms-user-select: none !important
+  -webkit-user-select: none !important
+
+select::-ms-expand
+  display: none
+
+input::-ms-clear
+  width: 15px
+  height: 15px
+
+.container
+  margin: 0 auto
+  padding: 0 15px
+  max-width: 1430px
+  width: 100%
+
+.button
+  padding: 20px 25px 20px 25px
+  transform: skew(-10deg, 0)
+  min-width: 250px
+  background-color: #CC9966
+  color: #fff
+  +Roboto(18px)
+  font-weight: 500
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  text-align: center
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+  z-index: 5
+
+.line
+  position: relative
+  padding-top: 27px
+  padding-bottom: 16px
+  width: 10000px
+  left: -4500px
+  border: 3px solid #CC9966
+  animation: lineIn linear 40s infinite
+
+  z-index: 5
+  &-img
+    margin: 0 35px
+    width: 723.57px
+
+@keyframes lineIn
+  0%
+    left: -4500px
+  100%
+    left: -3703px
+
+@keyframes lineOut
+  0%
+    left: -4500px
+  100%
+    left: -5298px
+
+.price
+  display: flex
+  align-items: center
+  &__text
+    +Roboto(36px)
+    font-weight: bold
+    text-transform: uppercase
+    color: #CC9966
+    &--old
+      margin-right: 15px
+      font-size: 30px
+      color: #CCCCCC
+      text-decoration: line-through
+    &--new
+      margin-left: 15px
+
+.sale
+  +Roboto(20px)
+  line-height: 45px
+  color: #54595F
+
+.fancybox-infobar
+  display: none
+
+.footer
+  background-color: #E0E1E6
+  &__container
+    padding-bottom: 14rem !important
+  &-product
+    margin-top: 132px !important
+  &__background
+    bottom: 15px !important
+    z-index: 0
+
+.info
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  width: 100vw
+  background-color: #333333
+  &__container
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 48px
+    z-index: 10
+  &__wrapper
+    padding-top: 11px
+    padding-bottom: 13px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    max-width: 974px
+    width: 100%
+  &__text
+    +Roboto(14px)
+    color: #fff
+    text-align: center
+    line-height: 1.6
+
+.policy
+  max-width: 800px
+  &__text
+    +Roboto(14px)
+    line-height: 26px
+    color: #000
+
+.input-wrapper
+  max-width: 450px
+  width: 100%
+  display: flex
+  justify-content: center
+
+.active
+  opacity: 1 !important
+  pointer-events: auto !important

@@ -1,0 +1,39 @@
+.header
+  background-color: #E0E1E6
+  overflow: hidden
+  &__container
+    position: relative
+    padding-top: 80px
+    padding-bottom: 150px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__img
+    &-first
+      position: absolute
+      top: 0
+      left: -387px
+      width: 900px
+      z-index: 0
+    &-second
+      position: absolute
+      top: 0
+      right: -295px
+      width: 900px
+      z-index: 0
+  &__logo
+    width: 266.4px
+    z-index: 5
+  &__title
+    margin: 156px 0 0 0
+    max-width: 720px
+    +Roboto(50px)
+    font-weight: bold
+    line-height: 70px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #222222
+    text-align: center
+    z-index: 5
+  &__button
+    margin-top: 100px

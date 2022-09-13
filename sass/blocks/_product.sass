@@ -1,0 +1,223 @@
+.product
+  overflow: hidden
+  background-color: #EFEEF3
+  &__container
+    padding-bottom: 118px
+    display: flex
+    flex-direction: column
+  &__line
+    animation: lineOut linear 45s infinite
+  &-wrapper
+    margin-top: 150px
+    display: flex
+    justify-content: space-between
+  &-shoes
+    &__img
+      margin-right: 7%
+      max-width: 780px
+      width: 100%
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &-item
+        margin-bottom: 3.8%
+        width: 48%
+        height: 275px
+        & img
+          width: 100%
+          height: 100%
+          object-fit: cover
+        &:first-child
+          width: 100%
+          height: 550px
+        &:nth-child(2n + 2)
+          margin-right: 3.8%
+        &--clothes
+          margin-right: 0 !important
+          width: 48% !important
+          height: 47.2% !important
+          &:nth-child(2n + 1)
+            margin-right: 3.8% !important
+  &-info
+    max-width: 520px
+    width: 100%
+    display: flex
+    flex-direction: column
+    &__title
+      margin: 0
+      +Roboto(36px)
+      font-weight: bold
+      line-height: 45px
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      color: #54595F
+      &--font-size
+        font-size: 24px
+    &__price
+      margin-bottom: 10px
+    &__head
+      margin-top: 17px
+      margin-bottom: 23px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-wrapper
+        display: flex
+        align-items: center
+    &__line
+      width: 100%
+      height: 1px
+      background-color: #54595F
+    &__description
+      margin: 29px 0
+      +Roboto(20px)
+      line-height: 45px
+      color: #54595F
+    &__list
+      margin: 0
+      padding: 0
+      display: flex
+      flex-direction: column
+      list-style: none
+      &-item
+        +Roboto(20px)
+        line-height: 35px
+        color: #54595F
+        &--font-weight
+          margin-right: 20px
+          font-weight: bold
+      &-wrapper
+        margin: 29px 0
+        display: flex
+    &__form
+      margin-top: 31px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+    &__size
+      position: relative
+      margin-right: 18px
+      padding: 7px 14px 6px 13px
+      transform: skew(-10deg, 0)
+      +Roboto(20px)
+      line-height: 35px
+      text-transform: uppercase
+      color: #54595F
+      background-color: transparent
+      border: 1px solid #54595F
+      border-radius: 5px
+      cursor: pointer
+      transition: background-color 0.7s ease, color 0.7s ease, border-color 0.7s ease, margin-right 0.3s ease
+      z-index: 3
+      user-select: none
+      outline: none
+      -webkit-tap-highlight-color: transparent
+      & input
+        display: none
+      &-santimeter
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        width: 80px
+        +Roboto(20px)
+        line-height: 35px
+        text-transform: none
+        color: #CC9966
+        opacity: 0
+        transition: left 0.3s ease, opacity 0.2s ease
+        z-index: 2
+        user-select: none
+        &--active
+          left: 66px
+          opacity: 1
+      &-wrapper
+        margin-left: 4px
+        margin-bottom: 29px
+        display: flex
+        &--clothes
+          & .product-info__size--active
+            margin-right: 66px
+      &--active
+        margin-right: 106px
+        color: #fff
+        background-color: #CC9966
+        border: 1px solid #CC9966
+      &:hover
+        color: #fff
+        background-color: #CC9966
+        border: 1px solid #CC9966
+    &__input
+      margin-left: 5px
+      padding: 16px 12px 14px 25px
+      transform: skew(-10deg, 0)
+      max-width: 440px
+      width: 100%
+      +Roboto(20px)
+      color: #54595F
+      border: 1px solid #54595F
+      border-radius: 5px
+      transition: border 0.2s ease, font-weight 0.2s ease
+      &:focus
+        border: 2px solid #54595F
+        font-weight: 500
+      &-name
+        margin-top: 30px
+      &-phone
+        margin-top: 19px
+    &__button
+      margin-top: 19px
+      margin-left: 5px
+      max-width: 440px
+      width: 100%
+    &__sale
+      margin-top: 30px
+  &-slider
+    position: relative
+    margin-bottom: 80px
+    display: none
+    max-width: 500px
+    width: 100%
+  &-swiper
+    width: 100%
+    height: 100%
+    overflow: hidden
+    &__slide
+      width: 100%
+      height: 100%
+      & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    & .swiper-pagination-bullets
+      bottom: -30px
+    & .swiper-pagination-bullet
+      margin: 0 5px !important
+      width: 10px
+      height: 10px
+      border: 1px solid #CC9966
+      background-color: transparent
+      opacity: 1
+      transition: background-color 0.5s ease
+    & .swiper-pagination-bullet-active
+      background-color: #CC9966
+  &__button
+    &-gender
+      margin: 0
+      margin-left: 20px
+      padding: 14px 16px 14px 18px
+      min-width: auto
+      background-color: transparent
+      border: 1px solid #54595F
+      color: #54595F
+      cursor: pointer
+      transition: border-color 0.7s ease, background-color 0.7s ease, color 0.7s ease !important
+      -webkit-tap-highlight-color: transparent
+      &--active
+        border-color: #CC9966
+        background-color: #CC9966
+        color: #fff
+      & input
+        display: none
+        position: absolute

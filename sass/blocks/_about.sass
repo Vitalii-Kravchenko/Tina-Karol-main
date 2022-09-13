@@ -1,0 +1,196 @@
+.about
+  position: relative
+  background-color: #EFEEF3
+  overflow: hidden
+  &__container
+    position: relative
+    padding-bottom: 22.7rem
+    display: flex
+    flex-direction: column
+    &--padding
+      padding-bottom: 8.4rem
+      &-bottom
+        padding-bottom: 11.5rem
+  &__button
+    padding: 0
+    position: fixed
+    bottom: 50px
+    right: 50px
+    width: 100px
+    height: 100px
+    +Roboto(14px)
+    font-weight: 500
+    color: #fff
+    text-align: center
+    border-radius: 50%
+    background-color: #CC9966
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    z-index: 10
+    opacity: 0
+    pointer-events: auto
+    transition: opacity 0.7s ease, visibility 0.7s ease
+    &--hidden
+      opacity: 0
+  &-text
+    display: flex
+    flex-direction: column
+    max-width: 700px
+    z-index: 5
+    &__wrapper
+      margin-bottom: 30px
+      display: flex
+      flex-direction: column
+      &-title
+        margin: 0
+        +Roboto(24px)
+        font-weight: 500
+        line-height: 45px
+        color: #CC9966
+      &-description
+        margin: 0
+        +Roboto(20px)
+        line-height: 45px
+        color: #54595F
+        &--max-width
+          max-width: 560px
+    &--main
+      &-4
+        margin-top: 152px
+        align-self: flex-end
+    &--1
+      margin-top: 150px
+    &--2
+      margin-top: 413px
+      align-self: flex-end
+    &--3
+      margin-top: 451px
+    &--4
+      margin-top: 650px
+    &__head
+      margin-bottom: 50px
+      display: flex
+      align-items: center
+      &-number
+        margin-right: 35px
+        margin-left: 6px
+        padding: 13px
+        transform: skew(-10deg, 0)
+        background-color: #CC9966
+        color: #fff
+        +Roboto(30px)
+        font-weight: bold
+        text-transform: uppercase
+        text-align: center
+        border-radius: 5px
+        &--width
+          width: 50px
+          height: 50px
+    &__main
+      display: flex
+      flex-direction: column
+      &-title
+        margin: 0
+        +Roboto(35px)
+        font-weight: bold
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #CC9966
+      &-description
+        margin: 0
+        +Roboto(20px)
+        font-weight: 500
+        line-height: 45px
+        color: #54595F
+    &__title
+      margin: 0
+      +Roboto(64px)
+      font-weight: bold
+      line-height: 90px
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      color: #222222
+    &__description
+      +Roboto(20px)
+      line-height: 45px
+      color: #54595F
+      &:nth-child(2)
+        margin-bottom: 20px
+      &--color
+        font-weight: 500
+        color: #CC9966
+      &--margin
+        &-top
+          margin-top: 51px
+          margin-bottom: 0 !important
+  &__img
+    &-1
+      position: absolute
+      top: 12.45rem
+      right: -15.35rem
+      width: 910px
+      z-index: 0
+    &-2
+      position: absolute
+      top: 46.02rem
+      left: 0.96rem
+      width: 650px
+      z-index: 0
+    &-3
+      position: absolute
+      top: 91.65rem
+      right: 0.9rem
+      width: 650px
+      z-index: 0
+    &-5
+      position: absolute
+      top: 12.65rem
+      left: 0.95rem
+      width: 650px
+      z-index: 0
+    &-6
+      position: absolute
+      top: 52rem
+      right: 0.9rem
+      width: 650px
+      z-index: 0
+  &-product
+    margin-top: 313px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+    z-index: 5
+    &--margin-top
+      margin-top: 225px
+    &__title
+      margin: 0
+      max-width: 740px
+      +Roboto(40px)
+      font-weight: bold
+      line-height: 70px
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      color: #222222
+    &__price
+      margin-top: 50px
+      &-text
+        &--old
+          margin-right: 15px
+        &--new
+          margin-left: 15px
+    &__button
+      margin-top: 31px
+    &__sale
+      margin-top: 29px
+  &__background
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    max-width: 1920px
+    width: 100%
+    z-index: 0
+    &--3
+      width: 1920px
+  &__line
+    animation: lineIn linear 45s infinite
